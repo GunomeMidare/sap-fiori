@@ -3,6 +3,8 @@
 ### General
 SAP advices to run certain checklists again after upgrades:
 - [2902673 - Rapid Activation for SAP Fiori in SAP S/4HANA - Overview](https://me.sap.com/notes/2902673)
+- [2886433 - Fiori Setup: Activation of OData Services in Prod Systems with task lists](https://me.sap.com/notes/2886433/E)
+- [3452535 - How to update the package assignment of Fiori apps activated via task list](https://me.sap.com/notes/3452535/E)
 
 Before running any Fiori task list in **STC01**, **implement the latest version of the corresponding SAP Note** (and its prerequisites). 
 
