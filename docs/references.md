@@ -1,7 +1,7 @@
 ## SAP Fiori Tasklists 📝
 
 ### General
-- [SAP Help: What Is SAP Build Work Zone, standard edition?](https://help.sap.com/docs/build-work-zone-standard-edition/sap-build-work-zone-standard-edition/what-is-sap-build-work-zone-standard-edition?locale=en-US)
+- []()
 
 ##### Fiori Foundation
 | Task List Name                    | Short Description                                                                     |
@@ -25,7 +25,9 @@
 ## SAP Fiori TaskLists
 
 #### Initial setup for embedded Fiori deployment in S/4HANA via Task List SAP_GW_FIORI_ERP_ONE_CLNT_SETUP . 
+SAP_GW_FIORI_ERP_ONE_CLNT_SETUP is a task list designed for setting up the SAP Gateway and SAP Fiori in a single client environment. It includes various tasks such as setting the SAP system alias for the Fiori Launchpad, activating HTTP services, and configuring system aliases. 
 #### Latest Version
+- [2510134 - Fiori Setup: Updates for task lists for Gateway/Fiori configuration](https://me.sap.com/notes/2510134/E)
 
 #### Background Information
 - [Configuring SAP Gateway and SAP Fiori](https://learning.sap.com/courses/technical-implementation-and-operation-i-of-sap-s-4hana-and-sap-business-suite/configuring-sap-gateway-and-sap-fiori-1)
@@ -33,8 +35,9 @@
 ---
 
 #### Activating SAP Fiori Foundation Via Task List SAP_FIORI_FOUNDATION_S4
-##### Latest Version
-
+##### Latest Version of Tasklist
+- [2712785 - Fiori Setup: Initial Setup for Fiori Applications S/4](https://me.sap.com/notes/2712785/E)
+  
 ##### Background Information
 - [Activating SAP Fiori Foundation Via Task List SAP_FIORI_FOUNDATION_S4](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/f7d17065a8234ae0986f45d2f4f419fd.html?locale=en-US)
 
