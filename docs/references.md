@@ -49,6 +49,7 @@ These activate apps via roles or catalogs, including OData/ICF and transport req
 SAP_GW_FIORI_ERP_ONE_CLNT_SETUP is a task list designed for setting up the SAP Gateway and SAP Fiori in a single client environment. It includes various tasks such as setting the SAP system alias for the Fiori Launchpad, activating HTTP services, and configuring system aliases. 
 #### Latest Version
 - [2510134 - Fiori Setup: Updates for task lists for Gateway/Fiori configuration](https://me.sap.com/notes/2510134/E)
+- [2639552 - Fiori Setup: Improvements for Activate FLP services used in task lists](https://me.sap.com/notes/2639552)
 
 #### Background Information
 - [Configuring SAP Gateway and SAP Fiori](https://learning.sap.com/courses/technical-implementation-and-operation-i-of-sap-s-4hana-and-sap-business-suite/configuring-sap-gateway-and-sap-fiori-1)
@@ -62,7 +63,8 @@ SAP_GW_FIORI_ERP_ONE_CLNT_SETUP is a task list designed for setting up the SAP G
 #### Activating SAP Fiori Foundation Via Task List SAP_FIORI_FOUNDATION_S4
 ##### Latest Version of Tasklist
 - [2712785 - Fiori Setup: Initial Setup for Fiori Applications S/4](https://me.sap.com/notes/2712785/E)
-  
+- [SAP Fiori for SAP S/4HANA - Simplifying My Home Activation from SAP S/4HANA 2023 FPS02 or higher](https://community.sap.com/t5/technology-blog-posts-by-sap/sap-fiori-for-sap-s-4hana-simplifying-my-home-activation-from-sap-s-4hana/ba-p/14005037)
+
 ##### Background Information
 - [Activating SAP Fiori Foundation Via Task List SAP_FIORI_FOUNDATION_S4](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/f7d17065a8234ae0986f45d2f4f419fd.html?locale=en-US)
 
