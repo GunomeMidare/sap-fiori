@@ -1,15 +1,26 @@
 ## SAP Fiori Tasklists 📝
 
 ### General
-- []()
+Before running any Fiori task list in **STC01**, **implement the latest version of the corresponding SAP Note** (and its prerequisites). 
+
+| Task List | Key Update Note |
+|----------|-----------------|
+| `SAP_GW_FIORI_ERP_ONE_CLNT_SETUP` | [2510134](https://launchpad.support.sap.com/#/notes/2510134) |
+| `SAP_FIORI_FOUNDATION_S4` | [2712785](https://launchpad.support.sap.com/#/notes/2712785) |
+| `SAP_FIORI_FCM_CONTENT_ACTIVATION` | [2813396](https://launchpad.support.sap.com/#/notes/2813396) |
+| `SAP_FIORI_FCM_CATALOG_ACTIVATION` | [3339909](https://launchpad.support.sap.com/#/notes/3339909) |
+
+---
 
 ##### Fiori Foundation
+These task lists set up core infrastructure. Run in sequence.
 | Task List Name                    | Short Description                                                                     |
 |-----------------------------------|---------------------------------------------------------------------------------------|
 | `SAP_GW_FIORI_ERP_ONE_CLNT_SETUP` | Performs initial setup for embedded Fiori deployment in S/4HANA.                      |
 | `SAP_FIORI_FOUNDATION_S4`         | Initial setup for Fiori applications in S/4HANA, including foundation configurations. |
 
 ##### Activating Fiori Apps
+These activate apps via roles or catalogs, including OData/ICF and transport requests.
 | Task List Name                        | Short Description                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------|
 | `SAP_FIORI_CONTENT_ACTIVATION`        | Activates SAP Fiori business roles and associated content (catalogs, groups, tiles).       |
@@ -46,7 +57,7 @@ SAP_GW_FIORI_ERP_ONE_CLNT_SETUP is a task list designed for setting up the SAP G
 #### Activating SAP Fiori Apps for Custom Business Roles Via Task List SAP_FIORI_FCM_CONTENT_ACTIVATION 📰
 You use this task list to specify one or more customer or SAP-delivered business roles (in the scope definition step), and then, automatically activate OData services and ICF nodes for these roles. The task list automatically assigns the OData services and business roles to a transport request.
 ##### Latest Version of Task List
-- [XXXX](https://me.sap.com/notes/2813396/E)
+- [2813396 - Fiori Setup: Content Activation for Business Roles](https://me.sap.com/notes/2813396/E)
 
 ##### Background Information
 - [Activating SAP Fiori Apps for Custom Business Roles Via Task List SAP_FIORI_FCM_CONTENT_ACTIVATION](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/865faf026ea94fd4b4298efdf5c5b358.html?locale=en-US)
