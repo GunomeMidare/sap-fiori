@@ -1,6 +1,9 @@
 ## SAP Fiori Tasklists 📝
 
 ### General
+SAP advices to run certain checklists again after upgrades:
+- [2902673 - Rapid Activation for SAP Fiori in SAP S/4HANA - Overview](https://me.sap.com/notes/2902673)
+
 Before running any Fiori task list in **STC01**, **implement the latest version of the corresponding SAP Note** (and its prerequisites). 
 
 | Task List | Key Update Note |
@@ -18,6 +21,13 @@ These task lists set up core infrastructure. Run in sequence.
 |-----------------------------------|---------------------------------------------------------------------------------------|
 | `SAP_GW_FIORI_ERP_ONE_CLNT_SETUP` | Performs initial setup for embedded Fiori deployment in S/4HANA.                      |
 | `SAP_FIORI_FOUNDATION_S4`         | Initial setup for Fiori applications in S/4HANA, including foundation configurations. |
+
+
+##### Enterprise Search
+| Task List Name                     | Short Description                                                                     |
+|------------------------------------|---------------------------------------------------------------------------------------|
+| `SAP_ESH_INITIAL_SETUP_WRK_CLIENT` | Initializes SAP Enterprise Search (ESH) in the current work client                    |
+
 
 ##### Activating Fiori Apps
 These activate apps via roles or catalogs, including OData/ICF and transport requests.
@@ -42,7 +52,11 @@ SAP_GW_FIORI_ERP_ONE_CLNT_SETUP is a task list designed for setting up the SAP G
 
 #### Background Information
 - [Configuring SAP Gateway and SAP Fiori](https://learning.sap.com/courses/technical-implementation-and-operation-i-of-sap-s-4hana-and-sap-business-suite/configuring-sap-gateway-and-sap-fiori-1)
+- [3596749 - Warning during execution of task list "SAP_GW_FIORI_ERP_ONE_CLNT_SETUP" in S/4HANA](https://me.sap.com/notes/3596749/E)
 
+#### Timing
+- **New implementation** - Run task list (transaction STC01): SAP_GW_FIORI_ERP_ONE_CLNT_SETUP
+- **SAP S/4HANA Upgrade** - It is recommended to run task list SAP_GW_FIORI_ERP_ONE_CLNT_SETUP again. This ensures that you cover all the new configuration settings.
 ---
 
 #### Activating SAP Fiori Foundation Via Task List SAP_FIORI_FOUNDATION_S4
@@ -51,6 +65,23 @@ SAP_GW_FIORI_ERP_ONE_CLNT_SETUP is a task list designed for setting up the SAP G
   
 ##### Background Information
 - [Activating SAP Fiori Foundation Via Task List SAP_FIORI_FOUNDATION_S4](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/f7d17065a8234ae0986f45d2f4f419fd.html?locale=en-US)
+
+##### Timing
+- **SAP S/4HANA Upgrade** - It is recommended to run task list SAP_FIORI_FOUNDATION_S4 again. This ensures that you cover all the new configuration settings.
+
+---
+
+#### - Activate Enterprise Search via task list SAP_ESH_INITIAL_SETUP_WRK_CLIENT
+##### Latest Version of Tasklist
+- []()
+  
+##### Background Information
+- [2626107 - How to execute task list SAP_ESH_INITIAL_SETUP_WRK_CLIENT](https://me.sap.com/notes/2626107/E)
+- [Task Lists for Setting Up Enterprise Search](https://help.sap.com/docs/ABAP_PLATFORM_NEW/5d7d37af2a864fe7942178707914e3ec/07f910bf569c4eeba5d0c5e6ba7bd972.html?locale=en-US)
+
+##### Timing
+- **New implementation** - Activate Enterprise Search via task list (transaction STC01): SAP_ESH_INITIAL_SETUP_WRK_CLIENT
+- **SAP S/4HANA Upgrade** - To update new or changed Search Models re-run task list SAP_ESH_INITIAL_SETUP_WRK_CLIENT.  
 
 ---
 
