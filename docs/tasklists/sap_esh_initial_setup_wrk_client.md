@@ -45,7 +45,7 @@ To observe the background job, you can use transactions SMX or SM37. The name of
 
 To observe the memory consumption, you may use transaction ST02: note the value of `SAP Memory → Heap memory → CurUse` (make sure that you are connected to the processing application server instance; you may use transaction SM51 to switch to another application server instance).
 
-Expect a runtime of about 2 hours.
+🕐 Expect a runtime of about 2 hours.
 
 ### Execute report ESH_REFRESH_RUNTIME_BUFFER 🛠️ 
 The report ESH_REFRESH_RUNTIME_BUFFER refreshes the in-memory runtime cache of the Embedded Search (ESH) framework in an S/4HANA system. This ensures that any changes made in transaction ESH_COCKPIT (e.g., creating, activating, deactivating, or regenerating connectors) are immediately available to end users without restarting the system or ICM.
