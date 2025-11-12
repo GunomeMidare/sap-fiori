@@ -11,7 +11,7 @@ The goal of this file is to document the activation of Enterprise Seatch via tas
 
 #### Blogs, SAP Help and other Sources
 - [Task Lists for Setting Up Enterprise Search](https://help.sap.com/docs/ABAP_PLATFORM_NEW/5d7d37af2a864fe7942178707914e3ec/07f910bf569c4eeba5d0c5e6ba7bd972.html?locale=en-US)
-- [SAP Laerning: Activating Enterprise Search](https://learning.sap.com/courses/technical-implementation-and-operation-i-of-sap-s-4hana-and-sap-business-suite/activating-enterprise-search-1)
+- [SAP Learning: Activating Enterprise Search](https://learning.sap.com/courses/technical-implementation-and-operation-i-of-sap-s-4hana-and-sap-business-suite/activating-enterprise-search-1)
 
 ## Prerequisites 📝
 - XXXX
