@@ -11,6 +11,7 @@ The goal of this file is to document the activation of Enterprise Seatch via tas
 
 #### Blogs, SAP Help and other Sources
 - [Task Lists for Setting Up Enterprise Search](https://help.sap.com/docs/ABAP_PLATFORM_NEW/5d7d37af2a864fe7942178707914e3ec/07f910bf569c4eeba5d0c5e6ba7bd972.html?locale=en-US)
+- [SAP Laerning: Activating Enterprise Search](https://learning.sap.com/courses/technical-implementation-and-operation-i-of-sap-s-4hana-and-sap-business-suite/activating-enterprise-search-1)
 
 ## Prerequisites 📝
 - XXXX
@@ -36,8 +37,11 @@ The goal of this file is to document the activation of Enterprise Seatch via tas
 
 6. XX
 
-   
+### Execute report ESH_REFRESH_RUNTIME_BUFFER 🛠️ 
+The report ESH_REFRESH_RUNTIME_BUFFER refreshes the in-memory runtime cache of the Embedded Search (ESH) framework in an S/4HANA system. This ensures that any changes made in transaction ESH_COCKPIT (e.g., creating, activating, deactivating, or regenerating connectors) are immediately available to end users without restarting the system or ICM.
 
+> [!NOTE]  
+> This report requires no parameters and it is quick to run (a few minutes).
    
 
 
