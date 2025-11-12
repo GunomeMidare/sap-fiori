@@ -26,16 +26,26 @@ The goal of this file is to document the activation of Enterprise Seatch via tas
 
      <img width="1580" height="623" alt="image" src="https://github.com/user-attachments/assets/66e2abf3-1477-44ab-847e-928dbed4a53c" />
    
-4. Click `Fill Parameters` for step `Select Models to Create Connectors`.
+4. Select `SAP HANA Primary DB Connection: DEFAULT` 
+5. Click `Fill Parameters` for step `Select Models to Create Connectors`.
 
      <img width="1747" height="473" alt="image" src="https://github.com/user-attachments/assets/19489ce6-225b-4d88-8385-291d0492c9f8" />
 
-5. In the field `Software Component` select `SAPAPPLH`.
+6. In the field `Software Component` select `SAPAPPLH`.
 
 > [!NOTE]  
 > The only relevant Enterprise Search Software Component in On-Premise releases of SAP S/4HANA is SAPAPPLH. Hence Enterprise search connectors should be created only from Software Component SAPAPPLH.
 
-6. XX
+7. XX
+
+### Check Execution (Job & Memory Consumption) 🛠️
+While the task list SAP_ESH_INITIAL_SETUP_WRK_CLIENT is being executed, observe the background job processing and the memory consumption.
+
+To observe the background job, you can use transactions SMX or SM37. The name of the related job starts with `STCTM_`.
+
+To observe the memory consumption, you may use transaction ST02: note the value of `SAP Memory → Heap memory → CurUse` (make sure that you are connected to the processing application server instance; you may use transaction SM51 to switch to another application server instance).
+
+Expect a runtime of about 2 hours.
 
 ### Execute report ESH_REFRESH_RUNTIME_BUFFER 🛠️ 
 The report ESH_REFRESH_RUNTIME_BUFFER refreshes the in-memory runtime cache of the Embedded Search (ESH) framework in an S/4HANA system. This ensures that any changes made in transaction ESH_COCKPIT (e.g., creating, activating, deactivating, or regenerating connectors) are immediately available to end users without restarting the system or ICM.
