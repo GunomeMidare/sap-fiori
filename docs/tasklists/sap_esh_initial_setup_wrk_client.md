@@ -14,7 +14,7 @@ The goal of this file is to document the activation of Enterprise Seatch via tas
 - [SAP Learning: Activating Enterprise Search](https://learning.sap.com/courses/technical-implementation-and-operation-i-of-sap-s-4hana-and-sap-business-suite/activating-enterprise-search-1)
 
 ## Prerequisites 📝
-- XXXX
+- Authorization for `STC01`, `ESH_COCKPIT`, `Fiori App F3036 Manage Search Models`.
 
 ### Activate Enterprise Search via task list SAP_ESH_INITIAL_SETUP_WRK_CLIENT 🛠️
 1. Call transaction `STC01`.
